@@ -12,6 +12,11 @@ class PayingMethod extends Model
     public $table = "methods_paying";
 
     protected $fillable = [
-        'payingName', 'payingNumber'
+        'payingName', 'payingNumber', 'name'
     ];
+
+    public function transaction()
+    {
+        return $this->belongsTo(Transaction::class, 'id', 'method_paying_id');
+    }
 }

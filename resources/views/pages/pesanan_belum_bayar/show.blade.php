@@ -52,6 +52,14 @@
                                     <h5 style="color: #ce1212"><b>{{ rupiah($item->total) }}</b></h5>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h5>Metode Pembayaran</h5>
+                                </div>
+                                <div class="col-6">
+                                    <h5>{{ $item->paying_method->payingName }} a/n {{ $item->paying_method->name }}</h5>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-6">
                             <div class="row">

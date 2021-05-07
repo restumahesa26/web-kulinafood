@@ -164,4 +164,18 @@ Route::prefix('admin')
         Route::get('/batal_pesanan/{id}', 'PesananController@batal_pesanan')->name('batal-pesanan');
 
         Route::get('/lihat_pesanan/{id}', 'PesananController@show_pesanan')->name('show-pesanan');
+
+        Route::get('/laporan-pesanan', 'LaporanController@pesanan')->name('laporan-pesanan');
+
+        Route::get('/laporan-produk-tersedia', 'LaporanController@produk_tersedia')->name('laporan-produk-tersedia');
+
+        Route::get('/laporan-produk-habis', 'LaporanController@produk_habis')->name('laporan-produk-habis');
+
+        Route::get('/laporan-produk', 'LaporanController@produk')->name('laporan-produk');
+
+        Route::get('/laporan-kategori', 'LaporanController@kategori')->name('laporan-kategori');
+
+        Route::get('/laporan-user', 'LaporanController@user')->name('laporan-user');
+
+        Route::get('/laporan-admin', 'LaporanController@admin')->name('laporan-admin');
     });

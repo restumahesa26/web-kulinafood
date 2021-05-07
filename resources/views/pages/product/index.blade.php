@@ -14,6 +14,9 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <a href="{{ route('laporan-produk') }}" class="btn btn-primary mb-3 mr-2">Buat Laporan Produk</a>
+            <a href="{{ route('laporan-produk-tersedia') }}" class="btn btn-info mb-3 mr-2">Buat Laporan Produk Tersedia</a>
+            <a href="{{ route('laporan-produk-habis') }}" class="btn btn-warning mb-3" style="color: #fff">Buat Laporan Produk Habis</a>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="table-responsive px-3 py-3">
                     <table class="table table-bordered table-hover" width="100%" cellspacing="0" id="product-table">

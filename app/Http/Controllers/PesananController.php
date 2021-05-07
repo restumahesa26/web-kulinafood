@@ -88,7 +88,7 @@ class PesananController extends Controller
         $items->packet_status = "Sampai Tujuan";
         $items->save();
 
-        return redirect()->route('dashboard');
+        return redirect()->route('pesanan-dikirim');
     }
 
     public function view_resi_code($id)

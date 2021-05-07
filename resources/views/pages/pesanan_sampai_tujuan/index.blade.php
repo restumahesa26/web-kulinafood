@@ -13,6 +13,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <a href="{{ route('laporan-pesanan') }}" class="btn btn-primary mb-3">Buat Laporan Pesanan</a>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="table-responsive px-3 py-3">
                     <table class="table table-bordered table-hover" width="100%" cellspacing="0">

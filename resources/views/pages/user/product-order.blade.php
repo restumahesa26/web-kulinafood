@@ -37,6 +37,7 @@
                 <div id="collapseOne" class="collapse mt-3 px-3" aria-labelledby="headingOne" data-parent="#accordion">
                     @forelse ( $items as $item )
                     <h1>No Pesanan : {{ $item->transaction_id }}</h1>
+                    <h3>Silahkan Bayar Pesanan Anda Sebelum Pukul {{ \Carbon\Carbon::parse($item->end_pay)->format('H') }}.{{ \Carbon\Carbon::parse($item->end_pay)->format('i') }} WIB</h3>
                     <form action="{{ route('paying-method', $item->id) }}" method="POST" class="mb-3">
                         <input type="hidden" name="id" value="{{ $item->id }}">
                         @csrf

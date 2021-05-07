@@ -28,7 +28,7 @@
             @csrf
             <div class="form-group">
                 <label><h3>Metode Pembayaran<span>*</span></h3></label>
-                <input type="text" class="form-control" value="{{ $pay->payingName }}" readonly>
+                <input type="text" class="form-control" value="{{ $pay->payingName }} a/n {{ $pay->name }}" readonly>
                 <input type="hidden" class="form-control" value="{{ $pay->id }}" readonly name="method_paying_id">
             </div>
             <div class="form-group">

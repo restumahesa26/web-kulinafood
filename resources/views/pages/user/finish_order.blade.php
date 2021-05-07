@@ -36,7 +36,7 @@
                     <select name="method_paying_id" id="method_paying_id" class="form-control">
                         <option value="">Pilih Metode Pembayaran</option>
                         @foreach ($pay as $item)
-                            <option value="{{ $item->id }}">{{ $item->payingName }}</option>
+                            <option value="{{ $item->id }}">{{ $item->payingName }} a/n {{ $item->name }}</option>
                         @endforeach
                     </select>
                 </div>

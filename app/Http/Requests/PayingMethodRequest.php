@@ -25,7 +25,8 @@ class PayingMethodRequest extends FormRequest
     {
         return [
             'payingName' => 'required|string|max:255',
-            'payingNumber' => 'required|string|max:255'
+            'payingNumber' => 'required|string|max:255',
+            'name' => 'required|string|max:255'
         ];
     }
 }

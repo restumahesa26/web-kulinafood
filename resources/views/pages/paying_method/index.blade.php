@@ -22,6 +22,7 @@
                                 <th>No</th>
                                 <th>Metode Pembayaran</th>
                                 <th>No Pembayaran</th>
+                                <th>Atas Nama</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -37,6 +38,7 @@
                                 <td class="bg-gradient-gray">{{ $no }}</td>
                                 <td>{{ $item->payingName }}</td>
                                 <td>{{ $item->payingNumber }}</td>
+                                <td>{{ $item->name }}</td>
                                 <td>
                                     <a href="{{ route('paying-method.edit', $item->id) }}" class="btn btn-info" data-toggle="tooltip" data-placement="top"
                                         title="Edit Data">

@@ -41,6 +41,11 @@ class Transaction extends Model
         return $this->hasMany(User::class, 'id', 'user_id');
     }
 
+    public function paying_method()
+    {
+        return $this->hasOne(PayingMethod::class, 'id', 'method_paying_id');
+    }
+
     public static function boot()
     {
         parent::boot();

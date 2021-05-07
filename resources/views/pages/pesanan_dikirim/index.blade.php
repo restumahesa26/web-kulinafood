@@ -35,6 +35,10 @@
                                 <td>{{ rupiah($item->total) }}</td>
                                 <td>{{ $item->resi_code }}</td>
                                 <td>
+                                    <a href="{{ route('show-pesanan', $item->id) }}" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                                        title="Edit Data">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
                                     <a href="{{ route('sampai-tujuan', $item->id) }}" class="btn btn-info btn-selesai" data-toggle="tooltip" data-placement="top"
                                         title="Edit Data">
                                         Selesai

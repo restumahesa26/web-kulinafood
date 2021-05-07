@@ -13,6 +13,8 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <a href="{{ route('laporan-user') }}" class="btn btn-primary mb-3 mr-2">Buat Laporan User</a>
+            <a href="{{ route('laporan-admin') }}" class="btn btn-info mb-3">Buat Laporan Admin</a>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="table-responsive px-3 py-3">
                     <table class="table table-bordered table-hover" width="100%" cellspacing="0" id="categories-table">

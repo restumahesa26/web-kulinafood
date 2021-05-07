@@ -147,7 +147,6 @@ class TransactionController extends Controller
         $resi_code = "Bayar Pesanan Terlebih Dahulu";
         $total = $request->total_price;
         $pay_status = "Menunggu Pembayaran";
-        $method_paying_id = 1;
 
         $transaction = new Transaction();
         $transaction->user_id = $user_id;
@@ -162,7 +161,6 @@ class TransactionController extends Controller
         $transaction->resi_code = $resi_code;
         $transaction->total = $total;
         $transaction->pay_status = $pay_status;
-        $transaction->method_paying_id = $method_paying_id;
         $transaction->end_pay = $endDate;
         $transaction->save();
 

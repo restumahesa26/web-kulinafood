@@ -38,6 +38,16 @@
                         </span>
                         @enderror
                     </div>
+                    <div class="form-group">
+                        <label for="name">Atas Nama</label>
+                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror"
+                            name="name" placeholder="Atas Nama" value="{{ old('name') }}">
+                        @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+                    </div>
                     <button type="submit" class="btn btn-primary btn-block btn-create">
                         Simpan
                     </button>
